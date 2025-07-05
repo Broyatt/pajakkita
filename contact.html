@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Pajak Kita</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Pajak Kita Logo">
+                <span class="logo-text">Pajak Kita</span>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="services.html">Layanan</a></li>
+                    <li><a href="about.html">Tentang Kami</a></li>
+                    <li><a href="contact.html" class="active">Kontak</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Page Hero -->
+    <section class="hero" style="background: linear-gradient(135deg, #1a73e8, #0d47a1); padding: 120px 0 80px;">
+        <div class="container">
+            <h1>Hubungi Kami</h1>
+            <p>Tim customer service kami siap membantu Anda dengan semua pertanyaan dan kebutuhan pengurusan dokumen kendaraan.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" style="padding: 60px 0;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px;">
+                <div>
+                    <h2>Kirim Pesan</h2>
+                    <p>Isi form di bawah ini dan kami akan menghubungi Anda dalam waktu 1x24 jam.</p>
+                    
+                    <form style="margin-top: 30px;">
+                        <div style="margin-bottom: 20px;">
+                            <label for="name" style="display: block; margin-bottom: 8px; font-weight: 500;">Nama Lengkap *</label>
+                            <input type="text" id="name" style="width: 100%; padding: 12px; border: 1px solid var(--dark-gray); border-radius: 4px;" placeholder="Masukkan nama lengkap Anda" required>
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <label for="email" style="display: block; margin-bottom: 8px; font-weight: 500;">Email *</label>
+                            <input type="email" id="email" style="width: 100%; padding: 12px; border: 1px solid var(--dark-gray); border-radius: 4px;" placeholder="Masukkan alamat email Anda" required>
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <label for="phone" style="display: block; margin-bottom: 8px; font-weight: 500;">Nomor HP *</label>
+                            <input type="tel" id="phone" style="width: 100%; padding: 12px; border: 1px solid var(--dark-gray); border-radius: 4px;" placeholder="Contoh: 08123456789" required>
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <label for="service" style="display: block; margin-bottom: 8px; font-weight: 500;">Layanan yang Dibutuhkan</label>
+                            <select id="service" style="width: 100%; padding: 12px; border: 1px solid var(--dark-gray); border-radius: 4px;">
+                                <option value="">Pilih layanan</option>
+                                <option value="stnk">Perpanjangan STNK</option>
+                                <option value="balik-nama">Balik Nama Kendaraan</option>
+                                <option value="cek-pajak">Cek Pajak Kendaraan</option>
+                                <option value="bpkb">Pengurusan BPKB</option>
+                                <option value="lainnya">Layanan Lainnya</option>
+                            </select>
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <label for="message" style="display: block; margin-bottom: 8px; font-weight: 500;">Pesan Anda *</label>
+                            <textarea id="message" rows="5" style="width: 100%; padding: 12px; border: 1px solid var(--dark-gray); border-radius: 4px;" placeholder="Ceritakan kebutuhan Anda secara detail" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Kirim Pesan</button>
+                    </form>
+                </div>
+                
+                <div>
+                    <h2>Informasi Kontak</h2>
+                    <p>Anda juga dapat menghubungi kami melalui berbagai cara berikut ini:</p>
+                    
+                    <div style="margin-top: 40px;">
+                        <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
+                            <div style="background-color: var(--light-blue); width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0;">
+                                <i class="fas fa-phone" style="color: var(--primary-blue); font-size: 1.2rem;"></i>
+                            </div>
+                            <div>
+                                <h3 style="margin-bottom: 5px;">Telepon</h3>
+                                <p style="margin-bottom: 5px; font-weight: 500;">+62 812-3456-7890</p>
+                                <p style="color: var(--text-light);">Senin - Sabtu, 08:00 - 17:00</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
+                            <div style="background-color: var(--light-blue); width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0;">
+                                <i class="fas fa-envelope" style="color: var(--primary-blue); font-size: 1.2rem;"></i>
+                            </div>
+                            <div>
+                                <h3 style="margin-bottom: 5px;">Email</h3>
+                                <p style="margin-bottom: 5px; font-weight: 500;">info@pajakkita.id</p>
+                                <p style="color: var(--text-light);">Respon dalam 24 jam</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
+                            <div style="background-color: var(--light-blue); width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0;">
+                                <i class="fas fa-map-marker-alt" style="color: var(--primary-blue); font-size: 1.2rem;"></i>
+                            </div>
+                            <div>
+                                <h3 style="margin-bottom: 5px;">Kantor Kami</h3>
+                                <p style="margin-bottom: 5px; font-weight: 500;">Jl. Sudirman No. 123</p>
+                                <p style="color: var(--text-light);">Jakarta Pusat, DKI Jakarta 10220</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: flex-start;">
+                            <div style="background-color: var(--light-blue); width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0;">
+                                <i class="fas fa-clock" style="color: var(--primary-blue); font-size: 1.2rem;"></i>
+                            </div>
+                            <div>
+                                <h3 style="margin-bottom: 5px;">Jam Operasional</h3>
+                                <p style="margin-bottom: 5px; font-weight: 500;">Senin - Sabtu: 08:00 - 17:00</p>
+                                <p style="color: var(--text-light);">Minggu: Tutup</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 40px;">
+                        <h3 style="margin-bottom: 15px;">Lokasi Kantor</h3>
+                        <div style="width: 100%; height: 300px; background-color: var(--dark-gray); border-radius: 8px; overflow: hidden;">
+                            <!-- Google Maps Embed -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.81956135000001!3d-6.194741999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5390917b759%3A0x6b45e839560a85ab!2sJl.%20Sudirman%20No.123%2C%20RT.1%2FRW.3%2C%20Karet%20Tengsin%2C%20Kecamatan%20Tanah%20Abang%2C%20Kota%20Jakarta%20Pusat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2010200!5e0!3m2!1sen!2sid!4v1621234567890!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Preview Section -->
+    <section class="faq-preview" style="background-color: var(--gray); padding: 60px 0;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pertanyaan Umum</h2>
+                <p>Berikut beberapa pertanyaan yang sering diajukan oleh pelanggan kami</p>
+            </div>
+            
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item" style="margin-bottom: 15px; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <button class="faq-question" style="width: 100%; text-align: left; padding: 20px; border: none; background: none; font-weight: 500; font-size: 1.1rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                        <span>Berapa lama proses pengurusan dokumen?</span>
+                        <i class="fas fa-chevron-down" style="transition: transform 0.3s;"></i>
+                    </button>
+                    <div class="faq-answer" style="padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height 0.3s, padding 0.3s;">
+                        <div style="padding: 0 0 20px 0;">
+                            <p>Waktu proses bervariasi tergantung jenis layanan. Untuk perpanjangan STNK biasanya 1-2 hari kerja, balik nama 3-5 hari kerja, dan pengurusan BPKB 5-7 hari kerja.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" style="margin-bottom: 15px; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <button class="faq-question" style="width: 100%; text-align: left; padding: 20px; border: none; background: none; font-weight: 500; font-size: 1.1rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                        <span>Bagaimana cara pembayaran layanan?</span>
+                        <i class="fas fa-chevron-down" style="transition: transform 0.3s;"></i>
+                    </button>
+                    <div class="faq-answer" style="padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height 0.3s, padding 0.3s;">
+                        <div style="padding: 0 0 20px 0;">
+                            <p>Kami menerima pembayaran melalui transfer bank, e-wallet (OVO, GoPay, Dana), atau tunai saat dokumen diantar. Pembayaran dilakukan 50% di awal dan 50% setelah dokumen selesai.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" style="margin-bottom: 15px; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <button class="faq-question" style="width: 100%; text-align: left; padding: 20px; border: none; background: none; font-weight: 500; font-size: 1.1rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                        <span>Apakah dokumen saya aman?</span>
+                        <i class="fas fa-chevron-down" style="transition: transform 0.3s;"></i>
+                    </button>
+                    <div class="faq-answer" style="padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height 0.3s, padding 0.3s;">
+                        <div style="padding: 0 0 20px 0;">
+                            <p>Kami menjamin keamanan dan kerahasiaan semua dokumen pelanggan. Dokumen disimpan di tempat yang aman dan hanya diakses oleh petugas yang berwenang.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="faq.html" class="btn btn-outline">Lihat Semua FAQ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Butuh Bantuan Cepat?</h2>
+            <p>Hubungi customer service kami sekarang juga melalui WhatsApp untuk respon lebih cepat.</p>
+            <a href="https://wa.me/6289630942489" class="btn" style="background-color: #25D366;"><i class="fab fa-whatsapp"></i> Chat WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo">
+                        <img src="images/logo-white.png" alt="Pajak Kita Logo">
+                        <span class="logo-text">Pajak Kita</span>
+                    </div>
+                    <p>Solusi terpercaya untuk semua kebutuhan dokumen kendaraan Anda.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Layanan</h3>
+                    <ul>
+                        <li><a href="services.html#stnk">Perpanjangan STNK</a></li>
+                        <li><a href="services.html#balik-nama">Balik Nama Kendaraan</a></li>
+                        <li><a href="services.html#cek-pajak">Cek Pajak Kendaraan</a></li>
+                        <li><a href="services.html#bpkb">Pengurusan BPKB</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Tautan Cepat</h3>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="services.html">Layanan</a></li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Kontak</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +62 896-3094-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@pajakkita.id</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Jl. Sudirman No. 123, Jakarta</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pajak Kita. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // FAQ Toggle Script
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                if (answer.style.maxHeight) {
+                    answer.style.maxHeight = null;
+                    answer.style.padding = '0 20px';
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    answer.style.padding = '0 20px 20px 20px';
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

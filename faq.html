@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Pajak Kita</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Pajak Kita Logo">
+                <span class="logo-text">Pajak Kita</span>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="services.html">Layanan</a></li>
+                    <li><a href="about.html">Tentang Kami</a></li>
+                    <li><a href="contact.html">Kontak</a></li>
+                    <li><a href="faq.html" class="active">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- FAQ Page Hero -->
+    <section class="hero" style="background: linear-gradient(135deg, #1a73e8, #0d47a1); padding: 120px 0 80px;">
+        <div class="container">
+            <h1>Pertanyaan Umum</h1>
+            <p>Temukan jawaban atas pertanyaan yang sering diajukan tentang layanan kami.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" style="padding: 60px 0;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Berikut adalah kumpulan pertanyaan yang sering diajukan oleh pelanggan kami</p>
+            </div>
+            
+            <div class="faq-categories" style="margin-bottom: 40px;">
+                <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                    <button class="faq-category-btn active" data-category="all" style="padding: 8px 16px; background-color: var(--primary-blue); color: white; border: none; border-radius: 20px; cursor: pointer;">Semua</button>
+                    <button class="faq-category-btn" data-category="stnk" style="padding: 8px 16px; background-color: white; color: var(--text-dark); border: 1px solid var(--dark-gray); border-radius: 20px; cursor: pointer;">STNK</button>
+                    <button class="faq-category-btn" data-category="bpkb" style="padding: 8px 16px; background-color: white; color: var(--text-dark); border: 1px solid var(--dark-gray); border-radius: 20px; cursor: pointer;">BPKB</button>
+                    <button class="faq-category-btn" data-category="balik-nama" style="padding: 8px 16px; background-color: white; color: var(--text-dark); border: 1px solid var(--dark-gray); border-radius: 20px; cursor: pointer;">Balik Nama</button>
+                    <button class="faq-category-btn" data-category="pembayaran" style="padding: 8px 16px; background-color: white; color: var(--text-dark); border: 1px solid var(--dark-gray); border-radius: 20px; cursor: pointer;">Pembayaran</button>
+                    <button class="faq-category-btn" data-category="proses" style="padding: 8px 16px; background-color: white; color: var(--text-dark); border: 1px solid var(--dark-gray); border-radius: 20px; cursor: pointer;">Proses</button>
+                </div>
+            </div>
+            
+            <div class="faq-items">
+                <!-- STNK Questions -->
+                <div class="faq-item" data-category="stnk" style="margin-bottom: 15px; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <button class="faq-question" style="width: 100%; text-align: left; padding: 20px; border: none; background: none; font-weight: 500; font-size: 1.1rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                        <span>Berapa lama proses perpanjangan STNK?</span>
+                        <i class="fas fa-chevron-down" style="transition: transform 0.3s;"></i>
+                    </button>
+                    <div class="faq-answer" style="padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height 0.3s, padding 0.3s;">
+                        <div style="padding: 0 0 20px 0;">
+                            <p>Proses perpanjangan STNK biasanya memakan waktu 1-2 hari kerja setelah semua dokumen lengkap dan pembayaran dilakukan. Kami akan menginformasikan perkembangan proses via WhatsApp atau telepon.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="stnk" style="margin-bottom: 15px; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <button class="faq-question" style="width: 100%; text-align: left; padding: 20px; border: none; background: none; font-weight: 500; font-size: 1.1rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                        <span>Dokumen apa saja yang diperlukan untuk perpanjangan STNK?</span>
+                        <i class="fas fa-chevron-down" style="transition: transform 0.3s;"></i>
+                    </button>
+                    <div class="faq-answer" style="padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height 0.3s, padding 0.3s;">
+                        <div style="padding: 0 0 20px 0;">
+                            <p>Dokumen yang diperlukan:</p>
+                            <ul style="margin-top: 10px; padding-left: 20px;">
+                                <li>Fotokopi KTP pemilik</li>
+                                <li>STNK asli</li>
+                                <li>BPKB asli (untuk kendaraan pertama kali perpanjangan 5 tahun)</li>
+                                <li>Bukti pembayaran pajak tahun sebelumnya</li>
+                                <li>Surat kuasa jika dikuasakan</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- BPKB Questions -->
+                <div class="faq-item" data-category="bpkb" style="margin-bottom: 15px; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <button class="faq-question" style="width: 100%; text-align: left; padding: 20px; border: none; background: none; font-weight: 500; font-size: 1.1rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                        <span>Bagaimana proses pengurusan BPKB hilang?</span>
+                        <i class="fas fa-chevron-down" style="transition: transform 0.3s;"></i>
+                    </button>
+                    <div class="faq-answer" style="padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height 0.3s, padding 0.3s;">
+                        <div style="padding: 0 0 20px 0;">
+                            <p>Proses pengurusan BPKB hilang membutuhkan beberapa langkah:</p>
+                            <ol style="margin-top: 10px; padding-left: 20px;">
+                                <li>Membuat laporan kehilangan di kepolisian</li>
+                                <li>Pengumuman di media cetak (koran)</li>
+                                <li>Pengurusan dokumen di SAMSAT</li>
+                                <li>Proses verifikasi dan penerbitan BPKB baru</li>
+                            </ol>
+                            <p style="margin-top: 10px;">Total waktu proses biasanya 7-14 hari kerja tergantung kompleksitas kasus.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Balik Nama Questions -->
+                <div class="faq-item" data-category="balik-nama" style="margin-bottom: 15px; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <button class="faq-question" style="width: 100%; text-align: left; padding: 20px; border: none; background: none; font-weight: 500; font-size: 1.1rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                        <span>Berapa biaya balik nama kendaraan?</span>
+                        <i class="fas fa-chevron-down" style="transition: transform 0.3s;"></i>
+                    </button>
+                    <div class="faq-answer" style="padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height 0.3s, padding 0.3s;">
+                        <div style="padding: 0 0 20px 0;">
+                            <p>Biaya balik nama kendaraan bervariasi tergantung beberapa faktor:</p>
+                            <ul style="margin-top: 10px; padding-left: 20px;">
+                                <li>Jenis kendaraan (motor/mobil)</li>
+                                <li>Tahun pembuatan kendaraan</li>
+                                <li>Daerah asal dan tujuan balik nama</li>
+                                <li>Kondisi dokumen (lengkap/tidak)</li>
+                            </ul>
+                            <p style="margin-top: 10px;">Untuk motor biasanya mulai dari Rp 500.000 dan mobil mulai dari Rp 1.000.000. Hubungi kami untuk penawaran harga yang lebih akurat.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pembayaran Questions -->
+                <div class="faq-item" data-category="pembayaran" style="margin-bottom: 15px; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <button class="faq-question" style="width: 100%; text-align: left; padding: 20px; border: none; background: none; font-weight: 500; font-size: 1.1rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                        <span>Metode pembayaran apa saja yang diterima?</span>
+                        <i class="fas fa-chevron-down" style="transition: transform 0.3s;"></i>
+                    </button>
+                    <div class="faq-answer" style="padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height 0.3s, padding 0.3s;">
+                        <div style="padding: 0 0 20px 0;">
+                            <p>Kami menerima berbagai metode pembayaran:</p>
+                            <ul style="margin-top: 10px; padding-left: 20px;">
+                                <li>Transfer Bank (BCA, Mandiri, BRI, BNI)</li>
+                                <li>E-wallet (OVO, GoPay, Dana, ShopeePay)</li>
+                                <li>Tunai saat dokumen diantar</li>
+                                <li>Virtual Account</li>
+                            </ul>
+                            <p style="margin-top: 10px;">Pembayaran biasanya dilakukan 50% di awal sebagai DP dan 50% setelah dokumen selesai.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proses Questions -->
+                <div class="faq-item" data-category="proses" style="margin-bottom: 15px; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <button class="faq-question" style="width: 100%; text-align: left; padding: 20px; border: none; background: none; font-weight: 500; font-size: 1.1rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                        <span>Bagaimana cara menyerahkan dokumen?</span>
+                        <i class="fas fa-chevron-down" style="transition: transform 0.3s;"></i>
+                    </button>
+                    <div class="faq-answer" style="padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height 0.3s, padding 0.3s;">
+                        <div style="padding: 0 0 20px 0;">
+                            <p>Anda bisa menyerahkan dokumen dengan beberapa cara:</p>
+                            <ul style="margin-top: 10px; padding-left: 20px;">
+                                <li><strong>Datang langsung ke kantor kami</strong> di Jl. Sudirman No. 123, Jakarta</li>
+                                <li><strong>Jemput dokumen</strong> - kami bisa mengirim kurir ke alamat Anda (berlaku biaya tambahan)</li>
+                                <li><strong>Upload digital</strong> - untuk dokumen pendukung yang bisa difoto/discanner</li>
+                            </ul>
+                            <p style="margin-top: 10px;">Dokumen asli seperti STNK dan BPKB tetap harus diserahkan secara fisik.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="proses" style="margin-bottom: 15px; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <button class="faq-question" style="width: 100%; text-align: left; padding: 20px; border: none; background: none; font-weight: 500; font-size: 1.1rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                        <span>Apakah ada garansi jika proses gagal?</span>
+                        <i class="fas fa-chevron-down" style="transition: transform 0.3s;"></i>
+                    </button>
+                    <div class="faq-answer" style="padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height 0.3s, padding 0.3s;">
+                        <div style="padding: 0 0 20px 0;">
+                            <p>Ya, kami memberikan garansi uang kembali 100% jika proses pengurusan dokumen gagal karena kesalahan kami. Namun jika kegagalan disebabkan oleh:</p>
+                            <ul style="margin-top: 10px; padding-left: 20px;">
+                                <li>Dokumen tidak lengkap/tidak valid</li>
+                                <li>Kendala dari pihak ketiga (SAMSAT, kepolisian, dll)</li>
+                                <li>Force majeure</li>
+                            </ul>
+                            <p style="margin-top: 10px;">Maka biaya administrasi yang sudah dikeluarkan tidak dapat dikembalikan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-contact" style="margin-top: 60px; background-color: var(--light-blue); padding: 40px; border-radius: 8px; text-align: center;">
+                <h3 style="margin-bottom: 20px;">Masih ada pertanyaan?</h3>
+                <p style="margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto;">Tim customer service kami siap membantu menjawab semua pertanyaan Anda tentang layanan kami.</p>
+                <a href="contact.html" class="btn">Hubungi Kami</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo">
+                        <img src="images/logo-white.png" alt="Pajak Kita Logo">
+                        <span class="logo-text">Pajak Kita</span>
+                    </div>
+                    <p>Solusi terpercaya untuk semua kebutuhan dokumen kendaraan Anda.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Layanan</h3>
+                    <ul>
+                        <li><a href="services.html#stnk">Perpanjangan STNK</a></li>
+                        <li><a href="services.html#balik-nama">Balik Nama Kendaraan</a></li>
+                        <li><a href="services.html#cek-pajak">Cek Pajak Kendaraan</a></li>
+                        <li><a href="services.html#bpkb">Pengurusan BPKB</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Tautan Cepat</h3>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="services.html">Layanan</a></li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Kontak</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +62 896-3094-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@pajakkita.id</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Jl. Sudirman No. 123, Jakarta</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pajak Kita. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // FAQ Toggle Script
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                if (answer.style.maxHeight) {
+                    answer.style.maxHeight = null;
+                    answer.style.padding = '0 20px';
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    answer.style.padding = '0 20px 20px 20px';
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+        
+        // FAQ Category Filter
+        const categoryBtns = document.querySelectorAll('.faq-category-btn');
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button
+                categoryBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const category = btn.dataset.category;
+                
+                // Filter FAQ items
+                faqItems.forEach(item => {
+                    if (category === 'all' || item.dataset.category === category) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
